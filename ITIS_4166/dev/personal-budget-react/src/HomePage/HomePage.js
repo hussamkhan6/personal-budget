@@ -27,13 +27,7 @@ function HomePage() {
             labels: []
         };
 
-        function createChart() {
-            var ctx = document.getElementById("myChart").getContext("2d");
-            var myPieChart = new Chart(ctx, {
-                type: 'pie',
-                data: dataSource
-            });
-        }
+
     
         function getBudget(){
             axios.get('http://localhost:3000/budget')
